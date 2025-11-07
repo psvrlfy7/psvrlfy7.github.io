@@ -1,1 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 12 - JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1 id="myName"></h1>
+
+    <p id="currentDate"></p>
+
+    <canvas id="canvasName" width="400" height="100" style="border:1px solid #000000;"></canvas>
+
+    <canvas id="canvasShapes" width="400" height="200" style="border:1px solid #000000;"></canvas>
+
+    <h2>What I Learned</h2>
+    <p>
+        In this assignment, I learned how to use JavaScript to dynamically manipulate HTML elements, display the current date and time, 
+        and draw on canvas. These skills allow me to create interactive and visually engaging web pages for current and future projects.
+    </p>
+
+    <script>
+        document.getElementById('myName').textContent = "Pavlo Sverdzolka";
+
+        document.getElementById('currentDate').textContent = new Date();
+
+        const canvas1 = document.getElementById("canvasName");
+        const ctx1 = canvas1.getContext("2d");
+        ctx1.font = "30px Arial";
+        ctx1.fillText("Pavlo Sverdzolka", 10, 50);
+
+        const canvas2 = document.getElementById("canvasShapes");
+        const ctx2 = canvas2.getContext("2d");
+
+        ctx2.beginPath();
+        ctx2.moveTo(10, 10);
+        ctx2.lineTo(200, 10);
+        ctx2.stroke();
+
+        ctx2.beginPath();
+        ctx2.arc(100, 100, 40, 0, 2 * Math.PI);
+        ctx2.stroke();
+
+        ctx2.fillStyle = "lightblue";
+        ctx2.fillRect(150, 50, 80, 80);
+    </script>
+
+</body>
+</html>
 
