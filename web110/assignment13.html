@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WEB110 Assignment 13 - Databases</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>WEB110 Assignment 13 - Databases</h1>
+
+    <p>Example of single-table SELECT statements:</p>
+    <ul>
+        <li>SELECT * FROM CUSTOMERS;</li>
+        <li>SELECT CustomerName, ContactName FROM CUSTOMERS;</li>
+        <li>SELECT CustomerName, City FROM CUSTOMERS WHERE Country='Germany';</li>
+    </ul>
+
+    <p>Example of INSERT, UPDATE, and DELETE statements:</p>
+    <ul>
+        <li>INSERT INTO CUSTOMERS (CustomerName, ContactName, Country) VALUES ('New Customer', 'John Doe', 'USA');</li>
+        <li>UPDATE CUSTOMERS SET ContactName='Jane Doe' WHERE CustomerID=1;</li>
+        <li>DELETE FROM CUSTOMERS WHERE CustomerID=10;</li>
+    </ul>
+
+    <p>During this assignment, I learned how to write basic SQL statements for selecting, inserting, updating, and deleting data in a database. Understanding these operations allows me to manage and manipulate data efficiently, which is essential for real-world web development and database management. I can apply this knowledge in any project that requires storing and retrieving structured data.</p>
+
+</body>
+</html>
