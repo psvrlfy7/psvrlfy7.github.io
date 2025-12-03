@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../Css/cssSt.css">
+    <title>Types of CSS and How They Work</title>
+</head>
+<body class="page3">
+    <h1>Types of <span style="color:deepskyblue;font-weight:bold;">CSS</span> and How They Work</h1>
+    <p>CSS, or Cascading Style Sheets, is used
+        to style web pages. There are three main
+        types of CSS: external, internal, and inline.</p>
+    <h2>1. External CSS</h2>
+    External CSS is stored in a separate .css file and linked to an HTML page using the <link> tag. This method is useful when you want to apply the same style to multiple pages.
+    Example: In a file called style.css you could write:
+    <ul>
+        <li>h1 { color: red; }</li>
+        <li>p { font-size: 16px; }</li>
+    </ul>
+    Then link it to all your HTML pages to apply the same styling everywhere.
+    <h2>2. Internal CSS</h2>
+    <p>Internal CSS is written inside the <code>&lt;style&gt;</code> tag within the <code>&lt;head&gt;</code> section of an HTML page. It applies only to that specific page and has higher priority than external CSS but lower than inline CSS.</p>
+
+    <p><strong>Example:</strong></p>
+    <pre>
+    &lt;head&gt;
+      &lt;style&gt;
+        h1 { color: blue; text-align: center; }
+        p { font-size: 18px; }
+      &lt;/style&gt;
+    &lt;/head&gt;
+    </pre>
+
+    <p>This will make the heading blue and centered, and the paragraph slightly larger, but only on this page.</p>
+
+    <h2>CSS Priority and Cascading</h2>
+    <p>CSS follows a priority order, also called “cascading”:</p>
+    <ul>
+        <li>Inline CSS (highest priority)</li>
+        <li>Internal CSS (medium priority)</li>
+        <li>External CSS (lowest priority)</li>
+    </ul>
+    <p>This means that if multiple styles target the same element, the style with higher priority will be applied.</p>
+
+    <h2>3. Inline CSS</h2>
+    Inline CSS is applied directly to an HTML element using the style attribute.
+    It has the highest priority and overrides other styles.
+    <p>
+    <p style="color: green; font-size: 22px;">Example:</p>
+
+    <code> style="color: green; font-size: 22px;"This text will appear green."</code>
+    <p>CSS Selectors and Properties</p>
+    <p>CSS uses selectors to target elements and properties to define how they look.</p>
+    <ul>
+        <li>Selector example: h1, p, .classname, #id</li>
+        <li>Property example: color, font-size, text-align, background-color, margin</li>
+    </ul>
+    <p> Example:
+        h1 {
+        color: red;
+        text-align: center;
+        font-size: 24px;
+        }
+    </p>
+    <p>This makes the heading red, centered, and larger.</p>
+    <div class="part2">
+        <h2>Useful YouTube Tutorial</h2>
+        <iframe width="320" height="180"
+                src="https://www.youtube.com/embed/C-Swp_G_LTo"
+                title="CSS Tutorial Video"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+        </iframe>
+        <h2>Conclusion and how to Apply</h2>
+        <p>By using external, internal, and inline CSS, and choosing
+            the correct selectors and properties, you can create visually appealing,
+            consistent, and responsive web pages. You can apply this learning
+            to any website project to control layout, fonts, colors, and overall design.</p>
+            <div><a href="Page4_Sources.html">Next page</a></div>
+            <div><a href="page2.html">Previous page</a></div>
+    </div>
+</body>
+</html>
